@@ -8,7 +8,7 @@
 
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../images/banner.jpg")');
+		@include vendor('background-image', 'url("../images/oldpiano.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -17,7 +17,7 @@
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
+		height: 30vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -95,7 +95,7 @@
 		}
 
 		&.major {
-			height: 75vh;
+			height: 50vh;
 			min-height: 30em;
 			max-height: 50em;
 

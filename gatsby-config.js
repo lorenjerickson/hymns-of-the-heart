@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: 'Hymns of the Heart',
+    author: 'Loren Erickson',
+    description:
+      'A simple place on the web for sharing my efforts in music arranging and composition.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +20,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown-pages`,
+        name: `markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
