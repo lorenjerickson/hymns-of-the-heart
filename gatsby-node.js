@@ -4,9 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-  const blogPostTemplate = require.resolve(`./src/templates/composition.js`)
+async function createCompositionPages(graphql, reporter, createPage) {
+  const compositionTemplate = require.resolve(
+    `./src/templates/composition-template.jsx`,
+  )
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -31,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: blogPostTemplate,
+      component: compositionTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.slug,
@@ -39,3 +40,48 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+async function createCategoryPages(graphql, reporter, createPage) {
+  const categoryTemplate = require.resolve(
+    `./src/templates/category-template.jsx`,
+  )
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: categoryTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.frontmatter.slug,
+      },
+    })
+  })
+}
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+  // await createPortfolioPage(graphql, reporter, createPage)
+  await createCompositionPages(graphql, reporter, createPage)
+  // await createCategoryPages(graphql, reporter, createPage)
+}
+

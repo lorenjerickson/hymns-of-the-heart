@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 // import oldpiano from '../assets/images/oldpiano.jpg'
-import pic02 from '../assets/images/pic02.jpg'
+import pic02 from '../assets/images/oldpiano2.jpg'
 
 const Banner = () => (
   <section

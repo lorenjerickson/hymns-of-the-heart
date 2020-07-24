@@ -51,11 +51,15 @@
     h3 {
       font-size: 1.75em;
 
-      a {
-        &:hover {
-          color: inherit !important;
-        }
+      &:hover {
+        color: black !important;
       }
+
+      //a {
+      //  &:hover {
+      //    color: inherit !important;
+      //  }
+      //}
     }
 
     .link.primary {

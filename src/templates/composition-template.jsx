@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 
-const PortfolioTemplate = ({ data }) => {
+const CompositionTemplate = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -44,7 +44,7 @@ const PortfolioTemplate = ({ data }) => {
   )
 }
 
-export default PortfolioTemplate
+export default CompositionTemplate
 
 export const pageQuery = graphql`
   query($slug: String!) {

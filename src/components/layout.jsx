@@ -17,13 +17,13 @@ class Layout extends React.Component {
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
 
-    componentDidMount () {
+    componentDidMount() {
         this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
+            this.setState({ loading: '' });
         }, 100);
     }
 
-    componentWillUnmount () {
+    componentWillUnmount() {
         if (this.timeoutId) {
             clearTimeout(this.timeoutId);
         }
@@ -42,6 +42,20 @@ class Layout extends React.Component {
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Helmet>
                     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
+                    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{/* 
+
+                    <script>
+                        if (window.netlifyIdentity) {
+                            window.netlifyIdentity.on("init", user => {
+                                if (!user) {
+                                    window.netlifyIdentity.on("login", () => {
+                                        document.location.href = "/admin/";
+                                    });
+                                }
+                            })
+                        }
+                    </script> */}
                 </Helmet>
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
@@ -50,6 +64,7 @@ class Layout extends React.Component {
                     <Footer />
                 </div>
                 <Menu onToggleMenu={this.handleToggleMenu} />
+
             </div>
         )
     }

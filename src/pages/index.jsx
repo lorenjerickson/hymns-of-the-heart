@@ -4,13 +4,13 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import oneman from '../assets/images/oneman-score.png'
-import littleOne from '../assets/images/little-one.png'
-import orchestral from '../assets/images/orchestral.png'
-import oratorios from '../assets/images/oratorios.png'
-import mixedChoir from '../assets/images/mixed-choir.png'
-import acapella from '../assets/images/acapella.png'
-import hymns from '../assets/images/hymns.png'
+import oneman from '../assets/portfolio/one-man.png'
+import littleOne from '../assets/portfolio/little-one.png'
+import orchestral from '../assets/portfolio/a-prayer-to-my-father-orchestral.png'
+import oratorios from '../assets/portfolio/the-restoration-11-carthage.png'
+import mixedChoir from '../assets/portfolio/a-poor-wayfaring-man-of-grief.png'
+import acapella from '../assets/portfolio/brightly-beams-our-fathers-mercy.png'
+import hymns from '../assets/portfolio/all-praise-to-our-redeeming-lord.png'
 
 class HomeIndex extends React.Component {
   render() {
