@@ -24,10 +24,10 @@ const CompositionTemplate = ({ data }) => {
               <h1>{frontmatter.title}</h1>
             </header>
             <span className="image main">
-              <Img
+              {/* <Img
                 fluid={frontmatter.coverURL.childImageSharp.fluid}
                 alt={frontmatter.title}
-              />
+              /> */}
             </span>
             <div className="downloads main">
               <a href={frontmatter.scoreURL}>score</a>
