@@ -98,28 +98,15 @@ class HomeIndex extends React.Component {
               <Link to="/oratorios" className="link primary" />
             </article>
           </section>
-          <section
-            id="two"
-            style={{
-              backgroundImage: `url(${oneman})`,
-              backgroundSize: `100% auto`,
-            }}
-          >
+
+          <section id="banner" className="major alt bottom">
             <div className="inner">
-              <header className="major">
+              <header>
                 <h2>One Man</h2>
               </header>
-              <p>
-                My magnum opus. An epic original work focusing on the
-                crucifixion of Jesus Christ.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link to="/one-man" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
+              <div class="content"><p>My magnum opus. An epic original work focusing on the crucifixion of Jesus Christ.</p>
+                <ul class="actions"><li><a class="button special" href="/compositions/one-man">Learn More</a></li></ul>
+              </div>
             </div>
           </section>
         </div>

@@ -25,27 +25,11 @@ const Contact = () => (
             </section>
             <section className="split">
                 <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-envelope" />
-                        <h3>Email</h3>
-                        <a href="#">information@untitled.tld</a>
-                    </div>
+                    <p>All works on this site are licensed freely for use at home, in church services, or in any non-commercial setting. They may not be redistributed, included in compilations, or sold for any other purpose without explicit written permission from yours truly.</p>
+
                 </section>
                 <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-phone"/>
-                        <h3>Phone</h3>
-                        <span>(000) 000-0000 x12387</span>
-                    </div>
-                </section>
-                <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-home"/>
-                        <h3>Address</h3>
-                        <span>1234 Somewhere Road #5432<br />
-                        Nashville, TN 00000<br />
-                        United States of America</span>
-                    </div>
+                    <p>If you are interested in other uses of my work please drop me a note using the feedback form.</p>
                 </section>
             </section>
         </div>

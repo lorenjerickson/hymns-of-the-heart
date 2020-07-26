@@ -2,10 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
 
 const CompositionTemplate = ({ data }) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark, cover, recording, score } = data
   const { frontmatter, html } = markdownRemark
 
   console.log(data)
@@ -23,20 +22,28 @@ const CompositionTemplate = ({ data }) => {
             <header className="major">
               <h1>{frontmatter.title}</h1>
             </header>
-            <span className="image main">
-              {/* <Img
-                fluid={frontmatter.coverURL.childImageSharp.fluid}
-                alt={frontmatter.title}
-              /> */}
-            </span>
-            <div className="downloads main">
-              <a href={frontmatter.scoreURL}>score</a>
-              <a href={frontmatter.recordingURL}>recording</a>
+            <div className="image left margin padding">
+              <img src={cover.publicURL} alt="frontmatter.title" />
             </div>
+            <div className="audio">
+              <audio src={recording.publicURL}></audio>
+            </div>
+
             <div
-              className="blog-post-content"
+              className="margin padding"
               dangerouslySetInnerHTML={{ __html: html }}
             />
+            <div className="downloads main">
+              <div>
+                <span className="icon fa-file-pdf-o" />{` `}
+                <a href={score.publicURL}>{frontmatter.title} (score)</a>
+              </div>
+
+              <div>
+                <span className="icon fa-music" />{` `}
+                <a href={recording.publicURL}>{frontmatter.title} (recording)</a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -47,7 +54,7 @@ const CompositionTemplate = ({ data }) => {
 export default CompositionTemplate
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query($slug: String!, $coverURL: String!, $recordingURL: String!, $scoreURL: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -59,6 +66,15 @@ export const pageQuery = graphql`
         coverURL
         tags
       }
+    }
+    cover: file(relativePath: {eq: $coverURL}) {
+      publicURL
+    }
+    recording: file(relativePath: {eq: $recordingURL}) {
+      publicURL
+    }
+    score: file(relativePath: {eq: $scoreURL}) {
+      publicURL
     }
   }
 `
