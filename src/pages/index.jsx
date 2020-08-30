@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import Banner from '../components/Banner'
 
-import oneman from '../assets/portfolio/one-man.png'
 import littleOne from '../assets/portfolio/little-one.png'
 import orchestral from '../assets/portfolio/a-prayer-to-my-father-orchestral.png'
 import oratorios from '../assets/portfolio/the-restoration-11-carthage.png'
 import mixedChoir from '../assets/portfolio/a-poor-wayfaring-man-of-grief.png'
 import acapella from '../assets/portfolio/brightly-beams-our-fathers-mercy.png'
 import hymns from '../assets/portfolio/all-praise-to-our-redeeming-lord.png'
+import Banner from '../components/Banner'
+
 
 class HomeIndex extends React.Component {
   render() {
@@ -104,8 +104,18 @@ class HomeIndex extends React.Component {
               <header>
                 <h2>One Man</h2>
               </header>
-              <div class="content"><p>My magnum opus. An epic original work focusing on the crucifixion of Jesus Christ.</p>
-                <ul class="actions"><li><a class="button special" href="/compositions/one-man">Learn More</a></li></ul>
+              <div className="content">
+                <p>
+                  My magnum opus. An epic original work focusing on the
+                  crucifixion of Jesus Christ.
+                </p>
+                <ul className="actions">
+                  <li>
+                    <a className="button special" href="/compositions/one-man">
+                      Learn More
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>

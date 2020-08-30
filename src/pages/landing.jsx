@@ -19,7 +19,7 @@ const Landing = () => (
 
         <div id="main">
             <section id="one">
-                <div className="inner">
+                <div className="inner">a
                     <header className="major">
                         <h2>Sed amet aliquam</h2>
                     </header>

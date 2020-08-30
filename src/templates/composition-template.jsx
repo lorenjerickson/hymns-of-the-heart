@@ -7,8 +7,6 @@ const CompositionTemplate = ({ data }) => {
   const { markdownRemark, cover, recording, score } = data
   const { frontmatter, html } = markdownRemark
 
-  console.log(data)
-
   return (
     <Layout>
       <Helmet>
@@ -35,13 +33,17 @@ const CompositionTemplate = ({ data }) => {
             />
             <div className="downloads main">
               <div>
-                <span className="icon fa-file-pdf-o" />{` `}
+                <span className="icon fa-file-pdf-o" />
+                {` `}
                 <a href={score.publicURL}>{frontmatter.title} (score)</a>
               </div>
 
               <div>
-                <span className="icon fa-music" />{` `}
-                <a href={recording.publicURL}>{frontmatter.title} (recording)</a>
+                <span className="icon fa-music" />
+                {` `}
+                <a href={recording.publicURL}>
+                  {frontmatter.title} (recording)
+                </a>
               </div>
             </div>
           </div>
@@ -54,7 +56,12 @@ const CompositionTemplate = ({ data }) => {
 export default CompositionTemplate
 
 export const pageQuery = graphql`
-  query($slug: String!, $coverURL: String!, $recordingURL: String!, $scoreURL: String!) {
+  query(
+    $slug: String!
+    $coverURL: String!
+    $recordingURL: String!
+    $scoreURL: String!
+  ) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -67,13 +74,13 @@ export const pageQuery = graphql`
         tags
       }
     }
-    cover: file(relativePath: {eq: $coverURL}) {
+    cover: file(relativePath: { eq: $coverURL }) {
       publicURL
     }
-    recording: file(relativePath: {eq: $recordingURL}) {
+    recording: file(relativePath: { eq: $recordingURL }) {
       publicURL
     }
-    score: file(relativePath: {eq: $scoreURL}) {
+    score: file(relativePath: { eq: $scoreURL }) {
       publicURL
     }
   }

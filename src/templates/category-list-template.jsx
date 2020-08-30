@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 import Pagination from '../components/pagination'
 
-export default class PortfolioList extends React.Component {
+export default class CategoryList extends React.Component {
   render() {
     const items = this.props.data.allMarkdownRemark.edges
       .map(edge => edge.node.frontmatter)
@@ -15,20 +15,20 @@ export default class PortfolioList extends React.Component {
         ...{ topics: item.topics },
       }))
 
-    const { currentPage, numPages } = this.props.pageContext
+    const { currentPage, numPages, category } = this.props.pageContext
 
     return (
       <Layout>
         <Helmet>
-          <title>Portfolio</title>
+          <title>{category}</title>
           <meta
             name="original and arranged musical works written by Loren Erickson"
-            content="Portfolio"
+            content={category}
           />
         </Helmet>
         <BannerLanding
-          title="My Portfolio"
-          description="Here is a collection of my publshed works of music.  There is a mix of arrangements and original works written for a variety of voices and instruments.  Please see a note about licensing of this music at the bottom of this page. "
+          title={category}
+          description={`My published works of music in the ${category} category.  A mix of original works and arrangements written for a variety of voices and instruments.`}
         />
         <div id="main">
           <section id="one">
@@ -39,29 +39,26 @@ export default class PortfolioList extends React.Component {
                   <thead>
                     <tr>
                       <th>Title</th>
-                      <th>Topics</th>
+                      <th>Category</th>
                       <th>Tags</th>
                     </tr>
                   </thead>
                   <tbody>
                     {items.map(item => (
                       <tr key={item.slug}>
+                        <td>{item.title}</td>
                         <td>
-                          <Link to={`/composition/${item.slug}`}>{item.title}</Link>
-                        </td>
-                        <td>
-                          {item.topics.map(cat => (
+                          {item.tags.map(cat => (
                             <Link
                               key={`${item.slug}-${cat}`}
                               to={`/topics/${cat}`}
-                              className="topic"
                             >
                               {cat}
                             </Link>
                           ))}
                         </td>
                         <td>
-                          {item.tags.map((tag, i) => (
+                          {item.tags.map(tag => (
                             <Link
                               key={`${item.slug}-${tag}`}
                               to={`/tags/${tag}`}
@@ -91,8 +88,8 @@ export default class PortfolioList extends React.Component {
   }
 }
 
-export const pageQuery = graphql`
-  query portfolioPageQuery($skip: Int!, $limit: Int!) {
+export const categoryListQuery = graphql`
+  query categoryListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___title], order: ASC }
       limit: $limit
@@ -100,13 +97,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            slug
             title
             topics
             tags
-            slug
           }
         }
       }

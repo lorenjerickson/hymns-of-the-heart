@@ -1,13 +1,22 @@
 ---
 slug: 'reverently-and-meekly-now'
-title: "Reverently and Meekly Now"
+title: 'Reverently and Meekly Now'
 date: '2019-06-17'
-tags: 'satb,organ,hymn,arrangement'
-categories: 'mixed-choir'
+tags:
+  - satb
+  - organ
+  - hymn
+  - arrangement
+topics:
+  - covenant
+  - savior
+  - sacrifice
+  - committment
 scoreURL: 'portfolio/reverently-and-meekly-now.pdf'
 recordingURL: 'portfolio/reverently-and-meekly-now.mp3'
 coverURL: 'portfolio/reverently-and-meekly-now.png'
 ---
+
 An arrangement of hymn #185 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.
 
 I submitted this arrangement to the annual sheet music competition hosted by freeldssheetmusic.org. It did not do very well in the competition. One of the comments I received was essentially, “What have you done? This is a sacrament hymn!” And I have to admit that, yes, you’ll never hear this version sung before participating in that ordinance.

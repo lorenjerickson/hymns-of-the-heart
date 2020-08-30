@@ -4,17 +4,23 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const { createFilePath } = require("gatsby-source-filesystem")
-const path = require("path")
+const { createFilePath } = require('gatsby-source-filesystem')
+const path = require('path')
 
+/**
+ *
+ * @param {*} graphql function to invoke GraphQL queries
+ * @param {*} reporter unknown
+ * @param {*} createPage function to create pages from GraphQL query results
+ */
 async function createCompositionPages(graphql, reporter, createPage) {
   const compositionTemplate = require.resolve(
-    `./src/templates/composition-template.jsx`,
+    `./src/templates/composition-template.jsx`
   )
   const result = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___title] }
         limit: 1000
       ) {
         edges {
@@ -24,7 +30,7 @@ async function createCompositionPages(graphql, reporter, createPage) {
               title
               date
               tags
-              categories
+              topics
               scoreURL
               recordingURL
               coverURL
@@ -56,6 +62,12 @@ async function createCompositionPages(graphql, reporter, createPage) {
   })
 }
 
+/**
+ * Create index pages for all songs
+ * @param {*} graphql function to invoke GraphQL queries
+ * @param {*} reporter unknown
+ * @param {*} createPage function to create pages from GraphQL query results
+ */
 async function createPortfolioPages(graphql, reporter, createPage) {
   const result = await graphql(
     `
@@ -67,13 +79,7 @@ async function createPortfolioPages(graphql, reporter, createPage) {
           edges {
             node {
               fields {
-                slug            
-              }
-              frontmatter {
                 slug
-                title                
-                categories
-                tags
               }
             }
           }
@@ -95,7 +101,7 @@ async function createPortfolioPages(graphql, reporter, createPage) {
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/portfolio` : `/portfolio/${i + 1}`,
-      component: path.resolve("./src/templates/portfolio-list-template.jsx"),
+      component: path.resolve('./src/templates/portfolio-list-template.jsx'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -106,87 +112,152 @@ async function createPortfolioPages(graphql, reporter, createPage) {
   })
 }
 
-// async function createCategoryPages(graphql, reporter, createPage) {
-//   const categoryTemplate = require.resolve(
-//     `./src/templates/category-template.jsx`,
-//   )
-//   const result = await graphql(`
-//     {
-//       allMarkdownRemark(
-//         sort: { order: DESC, fields: [frontmatter___date] }
-//         limit: 1000
-//       ) {
-//         edges {
-//           node {
-//             frontmatter {
-//               slug
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   // Handle errors
-//   if (result.errors) {
-//     reporter.panicOnBuild(`Error while running GraphQL query.`)
-//     return
-//   }
-//   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//     createPage({
-//       path: node.frontmatter.slug,
-//       component: categoryTemplate,
-//       context: {
-//         // additional data can be passed via context
-//         slug: node.frontmatter.slug,
-//       },
-//     })
-//   })
-// }
+/**
+ * Create index pages for each topic (e.g., /topics/hymns)
+ * @param {*} graphql function to invoke GraphQL queries
+ * @param {*} reporter unknown
+ * @param {*} createPage function to create pages from GraphQL query results
+ */
+async function createTopicPages(graphql, reporter, createPage) {
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___title] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+              title
+              topics
+              tags
+            }
+          }
+        }
+      }
+    }
+  `)
 
-// async function createTagPages(graphql, reporter, createPage) {
-//   const categoryTemplate = require.resolve(
-//     `./src/templates/category-template.jsx`,
-//   )
-//   const result = await graphql(`
-//     {
-//       allMarkdownRemark(
-//         sort: { order: DESC, fields: [frontmatter___date] }
-//         limit: 1000
-//       ) {
-//         edges {
-//           node {
-//             frontmatter {
-//               slug
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   // Handle errors
-//   if (result.errors) {
-//     reporter.panicOnBuild(`Error while running GraphQL query.`)
-//     return
-//   }
-//   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//     createPage({
-//       path: node.frontmatter.slug,
-//       component: categoryTemplate,
-//       context: {
-//         // additional data can be passed via context
-//         slug: node.frontmatter.slug,
-//       },
-//     })
-//   })
-// }
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const topics = result.data.allMarkdownRemark.edges
+    .map(edge => edge.node.frontmatter)
+    .reduce((acc, curr) => {
+      curr.topics.forEach(t => {
+        let topic = acc.find(itm => itm.tag === t)
+        if (!topic) {
+          topic = {
+            topic: t,
+            items: [],
+          }
+
+          acc.push(topic)
+        }
+
+        topic.items.push(curr)
+      })
+
+      return acc
+    }, [])
+
+  const postsPerPage = 10
+  topics.forEach((topic, i) => {
+    const numPages = Math.ceil(topic.items.length / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/topic/${topic.topic}` : `/topic/${topic.topic}/${i + 1}`,
+        component: path.resolve('./src/templates/topic-list-template.jsx'),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+          tagName: topic.topic,
+        },
+      })
+    })
+  })
+}
+
+async function createTagPages(graphql, reporter, createPage) {
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___title] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+              title
+              topics
+              tags
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const tags = result.data.allMarkdownRemark.edges
+    .map(edge => edge.node.frontmatter)
+    .reduce((acc, curr) => {
+      curr.tags.forEach(t => {
+        let tag = acc.find(itm => itm.tag === t)
+        if (!tag) {
+          tag = {
+            tag: t,
+            items: [],
+          }
+
+          acc.push(tag)
+        }
+
+        tag.items.push(curr)
+      })
+
+      return acc
+    }, [])
+
+  tags.forEach((tag, i) => {
+    const postsPerPage = 10
+    const numPages = Math.ceil(tag.items.length / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/tags/${tag.tag}` : `/tags/${tag.tag}/${i + 1}`,
+        component: path.resolve('./src/templates/tag-list-template.jsx'),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+          tagName: tag.tag,
+        },
+      })
+    })
+  })
+}
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   await createCompositionPages(graphql, reporter, createPage)
   await createPortfolioPages(graphql, reporter, createPage)
-  // await createCategoryPages(graphql, reporter, createPage)
-  // await createCategoryPages(graphql, reporter, createPage)
-
+  await createTopicPages(graphql, reporter, createPage)
+  await createTagPages(graphql, reporter, createPage)
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -200,4 +271,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-

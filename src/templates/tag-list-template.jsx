@@ -7,6 +7,8 @@ import Pagination from '../components/pagination'
 
 export default class PortfolioList extends React.Component {
   render() {
+    console.log(this.props.data)
+
     const items = this.props.data.allMarkdownRemark.edges
       .map(edge => edge.node.frontmatter)
       .map(item => ({
@@ -15,7 +17,7 @@ export default class PortfolioList extends React.Component {
         ...{ topics: item.topics },
       }))
 
-    const { currentPage, numPages } = this.props.pageContext
+    const { currentPage, numPages, tagName } = this.props.pageContext
 
     return (
       <Layout>
@@ -23,12 +25,12 @@ export default class PortfolioList extends React.Component {
           <title>Portfolio</title>
           <meta
             name="original and arranged musical works written by Loren Erickson"
-            content="Portfolio"
+            content="Tags"
           />
         </Helmet>
         <BannerLanding
-          title="My Portfolio"
-          description="Here is a collection of my publshed works of music.  There is a mix of arrangements and original works written for a variety of voices and instruments.  Please see a note about licensing of this music at the bottom of this page. "
+          title={`Tags - ${tagName}`}
+          description={`A collection of my publshed works of music that have been tagged with "${tagName}".  Please see a note about licensing of this music at the bottom of this page. `}
         />
         <div id="main">
           <section id="one">
@@ -44,19 +46,17 @@ export default class PortfolioList extends React.Component {
                     </tr>
                   </thead>
                   <tbody>
-                    {items.map(item => (
-                      <tr key={item.slug}>
+                    {items.map((item, index) => (
+                      <tr key={`${item.slug}-${index}`}>
+                        <td>{item.title}</td>
                         <td>
-                          <Link to={`/composition/${item.slug}`}>{item.title}</Link>
-                        </td>
-                        <td>
-                          {item.topics.map(cat => (
+                          {item.topics.map(topic => (
                             <Link
-                              key={`${item.slug}-${cat}`}
-                              to={`/topics/${cat}`}
+                              key={`${item.slug}-${topic}`}
+                              to={`/topics/${topic}`}
                               className="topic"
                             >
-                              {cat}
+                              {topic}
                             </Link>
                           ))}
                         </td>
@@ -92,8 +92,9 @@ export default class PortfolioList extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query portfolioPageQuery($skip: Int!, $limit: Int!) {
+  query tagPageQuery($skip: Int!, $limit: Int!, $tagName: String!) {
     allMarkdownRemark(
+      filter: { frontmatter: { tags: { in: [$tagName] } } }
       sort: { fields: [frontmatter___title], order: ASC }
       limit: $limit
       skip: $skip
@@ -106,7 +107,6 @@ export const pageQuery = graphql`
             title
             topics
             tags
-            slug
           }
         }
       }

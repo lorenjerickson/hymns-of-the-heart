@@ -2,12 +2,21 @@
 slug: 'a-poor-wayfaring-man-of-grief'
 title: 'A Poor Wayfaring Man of Grief'
 date: '2019-01-15'
-tags: 'satb,piano,arrangement,hymn'
-categories: 'mixed-choir' 
+tags:
+  - satb
+  - piano
+  - hymn
+  - arrangement
+topics:
+  - service
+  - fellowship
+  - savior
+  - example
 scoreURL: 'portfolio/a-poor-wayfaring-man-of-grief.pdf'
 recordingURL: 'portfolio/a-poor-wayfaring-man-of-grief.mp3'
 coverURL: 'portfolio/a-poor-wayfaring-man-of-grief.png'
 ---
+
 An arrangement of hymn #29 in the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.
 
 This is one of those hymns that a can either be really captivating or tedious depending on how it’s sung. I wanted to arrange it into something familiar, yet different.
