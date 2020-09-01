@@ -11,7 +11,7 @@ topics:
   - worship
   - atonement
   - praise
-scoreURL: 'portfolio/how-great-thou-art.pdf'
+scoreURL: 'portfolio/how-great-thou-art-score.pdf'
 recordingURL: 'portfolio/how-great-thou-art.mp3'
 coverURL: 'portfolio/how-great-thou-art.png'
 ---

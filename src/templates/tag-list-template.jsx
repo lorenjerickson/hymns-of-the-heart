@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 import Pagination from '../components/pagination'
 
-export default class PortfolioList extends React.Component {
+export default class TagListTemplate extends React.Component {
   render() {
     console.log(this.props.data)
 

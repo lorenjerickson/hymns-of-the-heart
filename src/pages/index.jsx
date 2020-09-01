@@ -44,7 +44,7 @@ class HomeIndex extends React.Component {
                   accompanied by Piano or Organ.
                 </p>
               </header>
-              <Link to="/mixed-choir" className="link primary" />
+              <Link to="/tags/mixed-choir" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${acapella})` }}>
               <header className="major">
@@ -54,7 +54,7 @@ class HomeIndex extends React.Component {
                   choirs.
                 </p>
               </header>
-              <Link to="/a-capella" className="link primary" />
+              <Link to="/tags/a-capella" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${orchestral})` }}>
               <header className="major">
@@ -64,7 +64,7 @@ class HomeIndex extends React.Component {
                   symphony orchestra and large choir.
                 </p>
               </header>
-              <Link to="/orchestral" className="link primary" />
+              <Link to="/tags/orchestral" className="link primary" />
             </article>
             <article
               style={{
@@ -76,7 +76,7 @@ class HomeIndex extends React.Component {
                 <h3>For Children</h3>
                 <p>Simple music that teach fundamental Gospel principles.</p>
               </header>
-              <Link to="/children" className="link primary" />
+              <Link to="/tags/children" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${hymns})` }}>
               <header className="major">
@@ -85,7 +85,7 @@ class HomeIndex extends React.Component {
                   Simple four part compositions for any choir or congregation.
                 </p>
               </header>
-              <Link to="/hymns" className="link primary" />
+              <Link to="/tags/hymns" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${oratorios})` }}>
               <header className="major">
@@ -95,7 +95,7 @@ class HomeIndex extends React.Component {
                   Christ and modern day prophets.{' '}
                 </p>
               </header>
-              <Link to="/oratorios" className="link primary" />
+              <Link to="/tags/oratorios" className="link primary" />
             </article>
           </section>
 

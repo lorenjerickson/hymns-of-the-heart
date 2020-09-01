@@ -11,9 +11,9 @@ topics:
   - israel
   - savior
   - blessing
-scoreURL: 'portfolio/Blessed-be-the-lord--god-of-israel.pdf'
-recordingURL: 'portfolio/Blessed-be-the-lord--god-of-israel.mp3'
-coverURL: 'portfolio/Blessed-be-the-lord--god-of-israel.png'
+scoreURL: 'portfolio/Blessed-be-the-Lord--God-of-Israel.pdf'
+recordingURL: 'portfolio/Blessed-be-the-Lord--God-of-Israel.mp3'
+coverURL: 'portfolio/Blessed-be-the-Lord--God-of-Israel.png'
 ---
 
 An original hymn based on 2 Chronicles 29. Submitted to the "new music" initiative sponsored by the Church of Jesus Christ of Latter-day Saints.

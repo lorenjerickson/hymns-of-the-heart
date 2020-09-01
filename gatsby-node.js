@@ -171,14 +171,14 @@ async function createTopicPages(graphql, reporter, createPage) {
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/topic/${topic.topic}` : `/topic/${topic.topic}/${i + 1}`,
+        path: i === 0 ? `/topics/${topic.topic}` : `/topics/${topic.topic}/${i + 1}`,
         component: path.resolve('./src/templates/topic-list-template.jsx'),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
           numPages,
           currentPage: i + 1,
-          tagName: topic.topic,
+          topic: topic.topic,
         },
       })
     })
