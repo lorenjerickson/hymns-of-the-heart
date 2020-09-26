@@ -30,11 +30,11 @@ const Contact = () => (
       <section className="split">
         <section>
           <p>
-            All works on this site are Copyright 2020, Loren Erickson. They are
-            freely licensed for use at home, in church services, or any
-            non-commercial setting. They may not be redistributed, included in
-            compilations, or sold for any purpose without explicit written
-            permission from me.
+            All works on this site are Copyright 2020, Loren Erickson. Except
+            where noted otherwise, they are freely licensed for use at home, in
+            church services, or any non-commercial setting. They may not be
+            redistributed, included in compilations, or sold for any purpose
+            without explicit written permission from me.
           </p>
 
           <p>
@@ -43,7 +43,11 @@ const Contact = () => (
           </p>
         </section>
         <section>
-            <p>If you like what you find here and are interested in contracting me for an arrangement or original work, I'm always looking for new projects. </p>
+          <p>
+            If you like what you find here and are interested in contracting me
+            for an arrangement or original work, I'm always looking for new
+            projects.{' '}
+          </p>
         </section>
       </section>
     </div>

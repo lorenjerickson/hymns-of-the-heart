@@ -92,7 +92,7 @@ export default class PortfolioList extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query portfolioPageQuery($skip: Int!, $limit: Int!) {
+  query portfolioListTemplateQuery ($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___title], order: ASC }
       limit: $limit

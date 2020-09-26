@@ -48,7 +48,11 @@ export default class TopicListTemplate extends React.Component {
                   <tbody>
                     {items.map((item, index) => (
                       <tr key={`${item.slug}-${index}`}>
-                        <td>{item.title}</td>
+                        <td>
+                          <Link to={`/composition/${item.slug}`}>
+                            {item.title}
+                          </Link>
+                        </td>
                         <td>
                           {item.topics.map(top => (
                             <Link
@@ -92,7 +96,7 @@ export default class TopicListTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query topicPageQuery($skip: Int!, $limit: Int!, $topic: String!) {
+  query topicListTemplateQuery($skip: Int!, $limit: Int!, $topic: String!) {
     allMarkdownRemark(
       filter: { frontmatter: { topics: { in: [$topic] } } }
       sort: { fields: [frontmatter___title], order: ASC }
@@ -105,6 +109,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            slug
             topics
             tags
           }

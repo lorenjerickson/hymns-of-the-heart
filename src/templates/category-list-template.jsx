@@ -89,7 +89,7 @@ export default class CategoryList extends React.Component {
 }
 
 export const categoryListQuery = graphql`
-  query categoryListQuery($skip: Int!, $limit: Int!) {
+  query categoryListTemplateQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___title], order: ASC }
       limit: $limit

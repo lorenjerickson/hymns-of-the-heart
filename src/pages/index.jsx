@@ -85,7 +85,7 @@ class HomeIndex extends React.Component {
                   Simple four part compositions for any choir or congregation.
                 </p>
               </header>
-              <Link to="/tags/hymns" className="link primary" />
+              <Link to="/tags/hymn" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${oratorios})` }}>
               <header className="major">
@@ -99,7 +99,7 @@ class HomeIndex extends React.Component {
             </article>
           </section>
 
-          <section id="banner" className="major alt bottom">
+          {/* <section id="banner" className="major alt bottom">
             <div className="inner">
               <header>
                 <h2>One Man</h2>
@@ -118,7 +118,7 @@ class HomeIndex extends React.Component {
                 </ul>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </Layout>
     )

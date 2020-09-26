@@ -56,7 +56,7 @@ const CompositionTemplate = ({ data }) => {
 export default CompositionTemplate
 
 export const pageQuery = graphql`
-  query(
+  query compositionTemplateQuery (
     $slug: String!
     $coverURL: String!
     $recordingURL: String!

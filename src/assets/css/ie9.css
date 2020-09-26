@@ -44,6 +44,12 @@
 		left: 0;
 	}
 
+	#header .logo img {
+		height: 24px;	
+		padding: 12px;
+		width: auto;
+	}
+
 	#header nav {
 		position: absolute;
 		top: 0;

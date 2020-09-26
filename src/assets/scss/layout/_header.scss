@@ -143,6 +143,21 @@
 			&.style4 { .logo { strong { color: _palette(accent4); } } }
 			&.style5 { .logo { strong { color: _palette(accent5); } } }
 			&.style6 { .logo { strong { color: _palette(accent6); } } }
+
+			.logo {
+				display: flex;
+				flex-flow: row nowrap;
+				align-content: stretch;
+				align-items: center;
+				&>* {
+					margin-right: -12px;
+				}
+				img {
+					height: 56px;	
+					padding: 12px;
+					width: auto;
+				}
+			}
 		}
 
 		.body.is-loading & {
