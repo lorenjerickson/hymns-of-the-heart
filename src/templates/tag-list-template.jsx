@@ -7,7 +7,7 @@ import Pagination from '../components/pagination'
 
 export default class TagListTemplate extends React.Component {
   render() {
-    console.log(this.props.data)
+    // console.log(this.props.data)
 
     const items = this.props.data.allMarkdownRemark.edges
       .map(edge => edge.node.frontmatter)

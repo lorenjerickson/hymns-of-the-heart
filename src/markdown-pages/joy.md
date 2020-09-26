@@ -10,7 +10,7 @@ tags:
 topics: 
     - christmas
     - joy
-scoreURL: 'portfolio/joy__SCORE.pdf'
+scoreURL: 'portfolio/joy.pdf'
 recordingURL: 'portfolio/joy.mp3'
 coverURL: 'portfolio/joy.png'
 ---
