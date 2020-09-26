@@ -8,7 +8,7 @@ const Footer = () => (
                 <li><a href="https://www.facebook.com/lorenje/" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
                 {/* <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li> */}
                 <li><a href="https://github.com/lorenjerickson" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="#" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>
+                <li><a href="https://www.linkedin.com/in/loren-erickson-7443b36/" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>
             </ul>
             <ul className="copyright">
                 <li>&copy; Hymns of the Heart</li><li>Design by <a href="https://html5up.net">HTML5 UP</a></li>
