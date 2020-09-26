@@ -1,10 +1,10 @@
 import React from 'react'
 
 import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Contact from './Contact'
-import Footer from './Footer'
+import Header from './header'
+import Menu from './menu'
+import Contact from './contact'
+import Footer from './footer'
 import { Helmet } from 'react-helmet/es/Helmet'
 
 class Layout extends React.Component {

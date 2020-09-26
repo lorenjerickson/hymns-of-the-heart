@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
-import BannerLanding from '../components/BannerLanding'
+import bannerLanding from '../components/bannerLanding'
 import Pagination from '../components/pagination'
 
 export default class TagListTemplate extends React.Component {
@@ -28,7 +28,7 @@ export default class TagListTemplate extends React.Component {
             content="Tags"
           />
         </Helmet>
-        <BannerLanding
+        <bannerLanding
           title={`Tags - ${tagName}`}
           description={`A collection of my publshed works of music that have been tagged with "${tagName}".  Please see a note about licensing of this music at the bottom of this page. `}
         />
