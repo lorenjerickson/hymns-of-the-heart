@@ -1,6 +1,6 @@
 ---
 slug: 'how-great-the-wisdom-and-the-love-ssaattbb-organ'
-title: 'How Great the Wisdome and the Love (orchestral)'
+title: 'How Great the Wisdome and the Love'
 date: '2019-03-15'
 tags:
   - ssaattbb
