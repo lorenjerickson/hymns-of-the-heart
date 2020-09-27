@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import Banner from '../components/banner'
 
 import littleOne from '../assets/portfolio/little-one.png'
 import orchestral from '../assets/portfolio/a-prayer-to-my-father-orchestral.png'
@@ -9,7 +10,6 @@ import oratorios from '../assets/portfolio/the-restoration-11-carthage.png'
 import mixedChoir from '../assets/portfolio/a-poor-wayfaring-man-of-grief.png'
 import acapella from '../assets/portfolio/brightly-beams-our-fathers-mercy.png'
 import hymns from '../assets/portfolio/all-praise-to-our-redeeming-lord.png'
-import Banner from '../components/banner'
 
 
 class HomeIndex extends React.Component {

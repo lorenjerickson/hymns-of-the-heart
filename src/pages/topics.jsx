@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import bannerLanding from '../components/bannerLanding'
+import BannerLanding from '../components/banner-landing'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 
 const Topics = () => {
@@ -59,7 +59,7 @@ const Topics = () => {
         <meta name="description" content="Topics Page" />
       </Helmet>
 
-      <bannerLanding
+      <BannerLanding
         title="Topics"
         description="General topics of works found on this site."
       />

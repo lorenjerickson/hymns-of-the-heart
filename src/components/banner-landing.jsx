@@ -1,6 +1,6 @@
 import React from 'react'
 
-const bannerLanding = ({ title, description }) => (
+const BannerLanding = ({ title, description }) => (
   <section id="banner" className="style2">
     <div className="inner">
       <header className="major">
@@ -13,4 +13,4 @@ const bannerLanding = ({ title, description }) => (
   </section>
 )
 
-export default bannerLanding
+export default BannerLanding

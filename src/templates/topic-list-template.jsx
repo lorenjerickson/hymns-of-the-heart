@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
-import bannerLanding from '../components/bannerLanding'
+import BannerLanding from '../components/banner-landing'
 import Pagination from '../components/pagination'
 
 export default class TopicListTemplate extends React.Component {
@@ -28,7 +28,7 @@ export default class TopicListTemplate extends React.Component {
             content="Tags"
           />
         </Helmet>
-        <bannerLanding
+        <BannerLanding
           title={`Topic - ${topic}`}
           description={`A collection of my publshed works of music related to the topic "${topic}".  Please see a note about licensing of this music at the bottom of this page. `}
         />

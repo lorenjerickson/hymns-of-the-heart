@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
-import bannerLanding from '../components/bannerLanding'
+import BannerLanding from '../components/banner-landing'
 import Pagination from '../components/pagination'
 
 export default class CategoryList extends React.Component {
@@ -26,7 +26,7 @@ export default class CategoryList extends React.Component {
             content={category}
           />
         </Helmet>
-        <bannerLanding
+        <BannerLanding
           title={category}
           description={`My published works of music in the ${category} category.  A mix of original works and arrangements written for a variety of voices and instruments.`}
         />
