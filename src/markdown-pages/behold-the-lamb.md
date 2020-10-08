@@ -10,9 +10,7 @@ tags:
 topics:
   - sacrifice
   - savior
-scoreURL: 'portfolio/behold-the-lamb.pdf'
-recordingURL: 'portfolio/behold-the-lamb.mp3'
-coverURL: 'portfolio/behold-the-lamb.png'
+videoID: NONE
 ---
 
 An original hymn. Submitted to the "new music" initiative sponsored by the Church of Jesus Christ of Latter-day Saints.

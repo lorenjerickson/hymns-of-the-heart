@@ -12,9 +12,7 @@ topics:
   - service
   - support
   - example
-scoreURL: 'portfolio/brightly-beams-our-fathers-mercy.pdf'
-recordingURL: 'portfolio/brightly-beams-our-fathers-mercy.mp3'
-coverURL: 'portfolio/brightly-beams-our-fathers-mercy.png'
+videoID: Be3QdosU4Ck
 ---
 
 An arrangement of hymn #335 in the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

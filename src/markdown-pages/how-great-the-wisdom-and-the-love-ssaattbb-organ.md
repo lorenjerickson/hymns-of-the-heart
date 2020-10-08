@@ -12,9 +12,7 @@ topics:
   - sacrifice
   - savior
   - love
-scoreURL: 'portfolio/how-great-the-wisdom-and-the-love-ssaattbb-organ.pdf'
-recordingURL: 'portfolio/how-great-the-wisdom-and-the-love-ssaattbb-organ.mp3'
-coverURL: 'portfolio/how-great-the-wisdom-and-the-love-ssaattbb-organ.png'
+videoID: qWnRWZuVpP8
 ---
 
 In the fall of 2017, I was contacted by a fellow named Lynn Chatterton, who had a very odd request.  He had come across [my arrangement of this hymn for strings, flutes and choir](/compositions/how-great-the-wisdom-and-the-love-orchestral), and asked if it could be adapated for an organ accompaniment. He said he was involved in a project about which he could not share the details at that time, but was interested in "proposing" that this arrangement be used provided it could be adapted for the organ. Apparently that was the only intstrument that would be available for the event.

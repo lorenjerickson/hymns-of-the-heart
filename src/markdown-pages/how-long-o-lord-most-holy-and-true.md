@@ -12,9 +12,7 @@ topics:
   - prophecy
   - salvation
   - redeemer
-scoreURL: 'portfolio/how_long__o_lord_most_holy_and_true.pdf'
-recordingURL: 'portfolio/how_long__o_lord_most_holy_and_true.mp3'
-coverURL: 'portfolio/how_long__o_lord_most_holy_and_true.png'
+videoID: b_dxPCkMm6A
 ---
 
 While working on The Restoration, a cantata about the life of Joseph Smith, I spent a lot of time looking for a hymn that represented the religious upheaval at that time.  I eventually found How Long, Oh Lord Most Holy and True.  While not strictly about Joseph or the history of his time, this hymn perfectly embodies the heart of the humble soul who is seeking divine grace from the Savior, and therefore was a perfect backdrop for that first movement of The Restoration, titled "Awakening".

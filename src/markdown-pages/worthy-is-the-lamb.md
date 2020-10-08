@@ -13,6 +13,7 @@ topics:
 scoreURL: 'portfolio/worthy_is_the_lamb__Full_Score_.pdf'
 recordingURL: 'portfolio/worthy_is_the_lamb.mp3'
 coverURL: 'portfolio/worthy-is-the-lamb.png'
+videoID: NONE
 ---
 
 I am not sure what to think of this composition.  My own mother called it "laborious" and having spent 15 hours in hard labor giving birth to me, she would know.  But I still like it.  The lyrics are taken loosely from the words of Isaiah and from John 3:16.  I feel that it represents a progression in our understanding of and appreciation for the gift the Only Begotten Son of our Heavenly Father.  I don't think any of us understand how hard that was for our Father in Heaven.  Yes, even though He loves each one of us, the whole world in fact, that He was willing to "give" His Son.  That doesn't mean it was easy.  

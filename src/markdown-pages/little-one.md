@@ -10,9 +10,7 @@ tags:
 topics: 
     - covenant
     - plan of salvation
-scoreURL: 'portfolio/little-one.pdf'
-recordingURL: 'portfolio/little-one.mp3'
-coverURL: 'portfolio/little-one.png'
+videoID: vhfK6U6Ze1I
 ---
 
 I became a grandfather for the first time last month.  I was warned by my parents that it would feel different; that I would feel an overwhelming urge to protect this "little one" from any possible harm.  

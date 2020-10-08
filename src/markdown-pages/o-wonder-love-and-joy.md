@@ -13,9 +13,7 @@ topics:
   - preexistence
   - salvation
   - faith
-scoreURL: 'portfolio/o-wonder-love-and-joy.pdf'
-recordingURL: 'portfolio/o-wonder-love-and-joy.mp3'
-coverURL: 'portfolio/o-wonder-love-and-joy-01.png'
+videoID: DwsVyFI2A_E
 ---
 
 I have sung with [Millennial Choirs and Orchestras](https://millennial.org/) (MCO) for about six years now. This year, for the first time, MCO is sponsoring a composing competition. Needless to say, I was highly motivated to compose something...magnificent.  Never one to think small, as soon as the competition was announced I immediately began writing.  

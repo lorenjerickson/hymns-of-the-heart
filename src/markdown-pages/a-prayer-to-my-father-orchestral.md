@@ -15,9 +15,7 @@ topics:
   - forgiveness
   - savior
   - eternal life
-scoreURL: 'portfolio/a-prayer-to-my-father-orchestral.pdf'
-recordingURL: 'portfolio/a-prayer-to-my-father-orchestral.mp3'
-coverURL: 'portfolio/a-prayer-to-my-father-orchestral.png'
+videoID: ooZ6Nkw-kVg
 ---
 
 An original work that is an interpretive medley of The Lord’s Prayer and O My Father, hymn #282 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

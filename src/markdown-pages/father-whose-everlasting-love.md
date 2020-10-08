@@ -11,9 +11,7 @@ topics:
   - atonement
   - father
   - sacrifice
-scoreURL: 'portfolio/father-whose-everlasting-love.pdf'
-recordingURL: 'portfolio/father-whose-everlasting-love.mp3'
-coverURL: 'portfolio/father-whose-everlasting-love.png'
+videoID: NONE
 ---
 
 An original hymn. Submitted to the "new music" initiative sponsored by the Church of Jesus Christ of Latter-day Saints.

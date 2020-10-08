@@ -14,9 +14,7 @@ topics:
   - repentance
   - love
   - savior
-scoreURL: 'portfolio/guide-me-to-thee---lean-on-my-ample-arm.pdf'
-recordingURL: 'portfolio/guide-me-to-thee---lean-on-my-ample-arm.mp3'
-coverURL: 'portfolio/guide-me-to-thee---lean-on-my-ample-arm.png'
+videoID: 1fsHqIJJZ2M
 ---
 
 A medley of hymns #101 and #120 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

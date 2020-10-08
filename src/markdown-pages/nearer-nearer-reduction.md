@@ -8,9 +8,7 @@ tags:
     - ssaattbb
 topics: 
     - plan-of-salvation
-scoreURL: 'portfolio/nearer-nearer-reduction.pdf'
-recordingURL: 'portfolio/nearer-nearer-reduction.mp3'
-coverURL: 'portfolio/nearer-nearer-reduction.png'
+videoID: dkFc1HOH5Fc
 ---
 
 Written for SSAATTBB choir with organ accompaniment.

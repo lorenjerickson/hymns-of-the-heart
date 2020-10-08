@@ -11,9 +11,7 @@ topics:
   - crucifixion
   - atonment
   - sacrifice
-scoreURL: 'portfolio/green-hill.pdf'
-recordingURL: 'portfolio/green-hill.mp3'
-coverURL: 'portfolio/green-hill.png'
+videoID: NONE
 ---
 
 An arrangement of hymn #194 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

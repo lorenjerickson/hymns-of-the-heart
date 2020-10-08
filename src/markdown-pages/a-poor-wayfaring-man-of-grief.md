@@ -12,9 +12,7 @@ topics:
   - fellowship
   - savior
   - example
-scoreURL: 'portfolio/a-poor-wayfaring-man-of-grief.pdf'
-recordingURL: 'portfolio/a-poor-wayfaring-man-of-grief.mp3'
-coverURL: 'portfolio/a-poor-wayfaring-man-of-grief.png'
+videoID: CrYkvOeA9BQ
 ---
 
 An arrangement of hymn #29 in the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

@@ -12,9 +12,7 @@ topics:
   - savior
   - sacrifice
   - committment
-scoreURL: 'portfolio/reverently-and-meekly-now.pdf'
-recordingURL: 'portfolio/reverently-and-meekly-now.mp3'
-coverURL: 'portfolio/reverently-and-meekly-now.png'
+videoID: 33qPF2kpd0g
 ---
 
 An arrangement of hymn #185 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

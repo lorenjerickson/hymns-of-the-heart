@@ -8,9 +8,7 @@ tags:
     - children
 topics: 
     - plan-of-salvation
-scoreURL: 'portfolio/one-boundless-love.pdf'
-recordingURL: 'portfolio/one-boundless-love.mp3'
-coverURL: 'portfolio/one-boundless-love.png'
+videoID: _VcEP9fuNdA
 ---
 
 I don't usually do primary songs.  Most of the time I find them too full of sachhcarine, and with not enough doctrine on their bones.  But with the excitement over the "new music" initialtive announced by the LDS church, I thought I'd try my hand at writing one.  This is now the third, and the one I'm most comfortable sharing here. 

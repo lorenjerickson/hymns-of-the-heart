@@ -12,9 +12,7 @@ topics:
   - sacrifice
   - savior
   - love
-scoreURL: 'portfolio/how-great-the-wisdom-and-the-love-orchestral.pdf'
-recordingURL: 'portfolio/how-great-the-wisdom-and-the-love-orchestral.mp3'
-coverURL: 'portfolio/how-great-the-wisdom-and-the-love-orchestral.png'
+videoID: NONE
 ---
 
 When I first paid attention to the fifth verse of this hymn, which we almost never sing, I was struck by how sad it was that the the exclamation point that this verse represents almost never is heard.  "How great, how glorious, how complete, redemption grand design...".  What a great message.  

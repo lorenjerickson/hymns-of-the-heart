@@ -10,9 +10,7 @@ tags:
 topics:
   - fellowship
   - service
-scoreURL: 'portfolio/all-praise-to-our-redeeming-lord.pdf'
-recordingURL: 'portfolio/all-praise-to-our-redeeming-lord.mp3'
-coverURL: 'portfolio/all-praise-to-our-redeeming-lord.png'
+videoID: NONE
 ---
 
 An original hymn written to the words of Charles Wesley.

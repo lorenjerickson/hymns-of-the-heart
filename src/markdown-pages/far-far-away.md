@@ -12,9 +12,7 @@ topics:
   - love
   - mercy
   - peace
-scoreURL: 'portfolio/far__far_away.pdf'
-recordingURL: 'portfolio/far__far_away.mp3'
-coverURL: 'portfolio/far__far_away.png'
+videoURL: NONE
 ---
 
 UPDATED: I know this is terribly out of season, but for some reason I was prompted to revisit this arrangement.  In doing so, and after a change in the software I use to arrange and compose, I found several grevious errors in the notation, things that were at best unclear and occasionally just plain unpleasant. I am more comfortable with this version, which is not to say that it is finished.  So if someone decides to celebrate Christmas in June, please have a listen and let me know what you think. 

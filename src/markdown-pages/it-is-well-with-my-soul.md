@@ -10,9 +10,7 @@ topics:
     - peace
     - trials
     - comfort
-scoreURL: 'portfolio/it_is_well_with_my_soul.pdf'
-recordingURL: 'portfolio/it_is_well_with_my_soul.mp3'
-coverURL: 'portfolio/it_is_well_with_my_soul.png'
+videoID: rzU4cIAyJuI
 ---
 
 One of the most tragic stories in the history of literature birthed one of the most beautiful manifestations of trust and faith in the Lord.  Horatio G. Spafford and his wife lost their entire family in a short period of time.  These words we penned as Horatio sailed over the spot where not long before his four daughters were killed in a tragic accident at sea.  Living in the shadow of Wilberg's magnificent arrangement of this hymn, I tried to pay homage to both Spafford and Wilberg without clinging too closely to their coat tails.  Most notably the accompaniment was inspired by the first line "when peace like a river," and might be somewhat challenging on the organ. 

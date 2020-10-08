@@ -10,9 +10,7 @@ tags:
 topics:
   - zion
   - israel
-scoreURL: 'portfolio/come-to-zion.pdf'
-recordingURL: 'portfolio/come-to-zion.mp3'
-coverURL: 'portfolio/come-to-zion.png'
+videoID: HdYSfxpzAo0
 ---
 
 This is a medley of Israel, Israel, God is Calling, and Redeemer of Israel. The combined messages of these hymns recently caught my attention. As with many hymns the combination of these two depicts a progression through life that includes the initial invitation to the Gospel, the first blush of testimony, falling into sin and being admonished to repent, and eventually rejoicing within the walls of Zion. The third verse is very...minor. So have a good listen before introducing this to your choir or congregation.
