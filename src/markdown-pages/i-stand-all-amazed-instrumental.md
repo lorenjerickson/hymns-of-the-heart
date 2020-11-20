@@ -11,7 +11,7 @@ topics:
     - savior
     - sacrifice
     - repentance
-videoID: NONE
+videoID: jnxT3NRkm0Q
 ---
 
 This is an instrumental arrangement of I Stand All Amazed.  It calls for Flute and string quartet (violin, viola, cello bass).  I arranged this for a stake conference some time ago, and it was well received.  Perhaps someone here can make use of it.  

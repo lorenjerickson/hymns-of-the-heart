@@ -15,7 +15,7 @@ const path = require('path')
  */
 async function createCompositionPages(graphql, reporter, createPage) {
   const compositionTemplate = require.resolve(
-    `./src/templates/composition-template.jsx`
+    `./src/templates/composition-template.jsx`,
   )
   const result = await graphql(`
     {
@@ -31,9 +31,6 @@ async function createCompositionPages(graphql, reporter, createPage) {
               date
               tags
               topics
-              scoreURL
-              recordingURL
-              coverURL
             }
           }
         }
@@ -48,17 +45,22 @@ async function createCompositionPages(graphql, reporter, createPage) {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
+    const data = {
       path: `/composition/${node.frontmatter.slug}`,
       component: compositionTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.slug,
-        coverURL: node.frontmatter.coverURL,
-        recordingURL: node.frontmatter.recordingURL,
-        scoreURL: node.frontmatter.scoreURL,
+        coverPath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}-01.png`,
+        recordingPath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}.mp3`,
+        scorePath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}.pdf`,
+        pagesGlob: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}-*.png`
       },
-    })
+    }
+
+    console.log(data)
+
+    createPage(data)
   })
 }
 
@@ -85,7 +87,7 @@ async function createPortfolioPages(graphql, reporter, createPage) {
           }
         }
       }
-    `
+    `,
   )
 
   if (result.errors) {

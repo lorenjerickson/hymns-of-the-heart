@@ -14,7 +14,7 @@ topics:
   - repentance
   - love
   - savior
-videoID: 1fsHqIJJZ2M
+videoID: NONE
 ---
 
 A medley of hymns #101 and #120 from the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints.

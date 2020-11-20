@@ -15,3 +15,5 @@ topics:
   - healing
 videoID: KTk7k_b-AyE
 ---
+
+Written for SATB choir with piano accompaniment.

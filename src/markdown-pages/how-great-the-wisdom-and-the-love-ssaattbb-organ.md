@@ -1,10 +1,10 @@
 ---
 slug: 'how-great-the-wisdom-and-the-love-ssaattbb-organ'
-title: 'How Great the Wisdome and the Love'
+title: 'How Great the Wisdom and the Love'
 date: '2019-03-15'
 tags:
   - ssaattbb
-  - orchestral
+  - organ
   - arrangement
   - hymn
 topics:

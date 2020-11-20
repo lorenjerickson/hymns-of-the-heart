@@ -11,7 +11,7 @@ topics:
   - covenant
   - savior
   - sacrifice
-  - committment
+  - commitment
 videoID: 33qPF2kpd0g
 ---
 

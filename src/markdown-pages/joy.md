@@ -10,7 +10,7 @@ tags:
 topics: 
     - christmas
     - joy
-videoID: NONE
+videoID: tSrTma6ExBc
 ---
 
 A very big, fast and short arrangement of Joy to the World.  The whole thing is over and done in about two and a half minutes.  It is also unaplogetically huge, and will likely challenge your accompanists (organ and piano), and choir (SSAATTBB).  But hey, when starting with Handel what do you expect?  As always if you find this music useful, please,let me know.  Constructive critique is also always welcome.  

@@ -4,12 +4,12 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/banner'
 
-import littleOne from '../assets/portfolio/little-one.png'
-import orchestral from '../assets/portfolio/a-prayer-to-my-father-orchestral.png'
-import oratorios from '../assets/portfolio/the-restoration-11-carthage.png'
-import mixedChoir from '../assets/portfolio/a-poor-wayfaring-man-of-grief.png'
-import acapella from '../assets/portfolio/brightly-beams-our-fathers-mercy.png'
-import hymns from '../assets/portfolio/all-praise-to-our-redeeming-lord.png'
+import littleOne from '../assets/portfolio/little-one/little-one-01.png'
+import orchestral from '../assets/portfolio/a-prayer-to-my-father-orchestral/a-prayer-to-my-father-orchestral-01.png'
+import oratorios from '../assets/portfolio/the-restoration-11-carthage/the-restoration-11-carthage-01.png'
+import mixedChoir from '../assets/portfolio/a-poor-wayfaring-man-of-grief/a-poor-wayfaring-man-of-grief-01.png'
+import acapella from '../assets/portfolio/brightly-beams-our-fathers-mercy/brightly-beams-our-fathers-mercy-01.png'
+import hymns from '../assets/portfolio/all-praise-to-our-redeeming-lord/all-praise-to-our-redeeming-lord-01.png'
 
 
 class HomeIndex extends React.Component {

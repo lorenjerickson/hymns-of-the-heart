@@ -11,7 +11,7 @@ topics:
   - worship
   - atonement
   - praise
-videoID: NONE
+videoID: KcLRz9m6Zn0
 ---
 
 Ranked second, after “Amazing Grace”, on the list of favorite hymns of all time, this has always held a special place in my heart. I’ve sung the version in the 1985 edition of the hymn book of the Church of Jesus Christ of Latter-day Saints countless of times. By my true appreciation of this hymn began when I sang the version arranged by Brett Stewart, co-founder of Millennial Choirs and Orchestras. That version defies description here, but it cause the message of this hymn (“…He bled and died to take away my sin…”) to become something more than words and notes on a page.
