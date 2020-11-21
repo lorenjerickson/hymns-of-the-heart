@@ -4,7 +4,7 @@ title: 'How Great Thou Art'
 date: '2019-03-15'
 tags:
   - satb
-  - piano
+  - organ
   - arrangement
   - hymn
 topics:

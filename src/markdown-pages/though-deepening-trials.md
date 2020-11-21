@@ -12,4 +12,4 @@ topics:
 videoID: XE61Tm0O4Wc
 ---
 
-Written for SSAATTBB choir with organ accompaniment.
+Written for SSAATTBB choir with piano accompaniment.
