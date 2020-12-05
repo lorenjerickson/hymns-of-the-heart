@@ -43,14 +43,7 @@ class Layout extends React.Component {
                 <Helmet>
                     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
                     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMT3XT30EB"></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){window.dataLayer.push(arguments)};
-                        gtag('js', new Date());
 
-                        gtag('config', 'G-QMT3XT30EB');
-                    </script>
                     {/* 
 
                     <script>
