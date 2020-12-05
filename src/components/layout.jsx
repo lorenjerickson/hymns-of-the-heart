@@ -46,7 +46,7 @@ class Layout extends React.Component {
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMT3XT30EB"></script>
                     <script>
                         window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments)};
+                        function gtag(){window.dataLayer.push(arguments)};
                         gtag('js', new Date());
 
                         gtag('config', 'G-QMT3XT30EB');
