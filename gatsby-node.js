@@ -53,8 +53,7 @@ async function createCompositionPages(graphql, reporter, createPage) {
         slug: node.frontmatter.slug,
         coverPath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}-01.png`,
         recordingPath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}.mp3`,
-        scorePath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}.pdf`,
-        pagesGlob: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}-*.png`
+        scorePath: `portfolio/${node.frontmatter.slug}/${node.frontmatter.slug}.pdf`
       },
     }
 

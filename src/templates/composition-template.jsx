@@ -9,7 +9,7 @@ const CompositionTemplate = ({ data }) => {
   const { markdownRemark, cover, recording, score } = data
   const { frontmatter, html } = markdownRemark
 
-  const pages = data.pages.edges.map(p => p.node.publicURL).sort();
+  const pages = [cover.publicURL]
 
   const [showPages, setShowPages] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
@@ -127,7 +127,6 @@ export const pageQuery = graphql`
     $coverPath: String!
     $recordingPath: String!
     $scorePath: String!
-    $pagesGlob: String!
   ) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
@@ -148,13 +147,6 @@ export const pageQuery = graphql`
     }
     score: file(relativePath: { eq: $scorePath }) {
       publicURL
-    }
-    pages: allFile(filter: { relativePath: { glob: $pagesGlob } }) {
-      edges {
-        node {
-          publicURL
-        }
-      }
     }
   }
 `
