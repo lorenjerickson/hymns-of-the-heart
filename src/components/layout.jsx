@@ -43,7 +43,8 @@ class Layout extends React.Component {
                 <Helmet>
                     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
                     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{/* 
+
+                    {/* 
 
                     <script>
                         if (window.netlifyIdentity) {
