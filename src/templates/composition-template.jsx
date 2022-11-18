@@ -78,16 +78,18 @@ const CompositionTemplate = ({ data }) => {
                     </a>
                   </div>
 
-                  <div>
-                    <span className="icon fa-youtube-play" />
-                    {` `}
-                    <a
-                      href={`https://www.youtube.com/watch?v=${frontmatter.videoID}`}
-                      target="_blank"
-                    >
-                      {frontmatter.title} (video)
-                    </a>
-                  </div>
+                  {frontmatter.videoID !== 'NONE' && (
+                    <div>
+                      <span className="icon fa-youtube-play" />
+                      {` `}
+                      <a
+                        href={`https://www.youtube.com/watch?v=${frontmatter.videoID}`}
+                        target="_blank"
+                      >
+                        {frontmatter.title} (video)
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
               <div

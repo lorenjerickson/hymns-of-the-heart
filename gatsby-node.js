@@ -57,7 +57,7 @@ async function createCompositionPages(graphql, reporter, createPage) {
       },
     }
 
-    // console.log(data)
+    console.log(data)
 
     createPage(data)
   })
